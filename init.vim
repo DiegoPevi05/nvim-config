@@ -4,8 +4,6 @@
 "██║██║╚████║██║░░░██║░░░░░░░╚████╔╝░██║██║╚██╔╝██║
 "██║██║░╚███║██║░░░██║░░░██╗░░╚██╔╝░░██║██║░╚═╝░██║ 
 "╚═╝╚═╝░░╚══╝╚═╝░░░╚═╝░░░╚═╝░░░╚═╝░░░╚═╝╚═╝░░░░░╚═╝
-"𝕓𝕪 𝕁𝕠𝕒𝕢𝕦𝕚𝕟 𝕍𝕒𝕣𝕖𝕝𝕒 𝕐𝕋               
-"https://www.youtube.com/channel/UCw1Ipy5_P1OL0zUJMfYC7-A					    
 
 "---------------------------------vim config---------------------------- 
 syntax on 
@@ -40,6 +38,7 @@ vnoremap > >gv
 source ~/AppData/Local/nvim/plugins/plugins.vim
 source ~/AppData/Local/nvim/plugins/plug-config.vim
 source ~/AppData/Local/nvim/themes/onedark.vim
+luafile ~/AppData/Local/nvim/lua/colorizer_config.lua
 "--------------------------------Plugins Config--------------------------------------------
 "save file
 "guardar archivo
@@ -52,42 +51,52 @@ nmap <leader>so :so%<CR>
 "search commands 
 "comandos de busqueda
 nmap <leader>gs  :CocSearch
-nmap <leader>fs :FZF<CR>
-nmap <leader>rg :Rg<CR>
 "configuracion de tabs
 let g:indentLine_enabled = 1
 let g:indentLine_char = '▏'
 let g:indentLine_faster = 1
 let g:indentLine_fileTypeExclude=["nerdtree"]
 
-"abrir Nerdtree
-"open nerdtree
+"open/cerrar nerdtree
 nmap <Leader>e :NERDTreeToggle<CR>
 
 "open cocExplorer 
-"Buscar dos carácteres con easymotion
 "Search for two chars with easymotion
 nmap <Leader>s <Plug>(easymotion-s2)
 
 " TAB in general mode will move to text buffer
-" TAB en modo normal se moverá al siguiente buffer
 nnoremap <silent> <TAB> :bnext<CR>
+
 " SHIFT-TAB will go back
-" SHIFT-TAB va para atras 
 nnoremap <silent> <S-TAB> :bprevious<CR>
+nnoremap <silent> ss :split<CR>
+nnoremap <silent> sv :vsplit<CR>
+"select all
+nnoremap <silent> <C-a> gg<S-v>G<CR>
 "close buffer
 "cerrar buffer
 nmap <leader>bd :bdelete<CR>
 "--gruvbox config--
 "colorscheme onedark
-"let g:gruvbox_contrast_dark = "medium"
+"colorscheme gruvbox
+"let g:gruvbox_italic=1
+"set background=dark   " Setting light mode
+"let g:gruvbox_contrast_dark = "hard"
+
 
 set cmdheight=1
-let g:tokyonight_style = 'night' " available: night, storm
-let g:tokyonight_enable_italic = 0
+let g:tokyonight_style = 'storm' " available: night, storm
+let g:tokyonight_enable_italic = 1
 colorscheme tokyonight
 "Close tags automatically
 "Cerrar tags automaticamente
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml, *.jsx, *.js, *.tsx , *.ts'
 "-----------------------------------------------------------------
+" TELESCOPE CONFIG
+" Load Telescope configuration
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
 

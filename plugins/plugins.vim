@@ -6,13 +6,12 @@ Plug 'morhetz/gruvbox'
 Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'joshdick/onedark.vim'
-Plug 'safv12/andromeda.vim'
+"Plug 'safv12/andromeda.vim'
 Plug 'ghifarit53/tokyonight-vim'
 
 " "IDE
 Plug 'easymotion/vim-easymotion'
 "Navigate with C-h C-l C-j C-k
-"Navegar con C-h C-l C-j C-k
 Plug 'christoomey/vim-tmux-navigator'
 "NERDTREE
 Plug 'preservim/nerdtree'
@@ -25,14 +24,20 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " Stable version of coc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 "Close pairs () [] {} ''
 "Cerrar los pares () [] {} '' 
 Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
-"FZF
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim',
-"colorizer plugin for #fe4918
+"Telescope
+"Search Files
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.5' }
+
+"treesitter(tomorrow check this)
+"Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+""colorizer plugin for #fe4918
 Plug 'norcalli/nvim-colorizer.lua'
 "Multiple cursor like in vscode
 Plug 'terryma/vim-multiple-cursors'
