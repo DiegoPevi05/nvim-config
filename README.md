@@ -1,14 +1,63 @@
-## Neovim Windows
+## Neovim Windows/Linux-Debian
 
-Requisitos para instalar esto
+### Windows
+Requisitos para instalar en Windows 
 
-1 Vim-Plug
+* Vim-Plug
+* Git
+* RipGrep
+* nvim
 
-2 Git
+##### Special Configurations for Windows 
+> It only works on Vim >= 8.1 and Neovim
 
-3 RipGrep
+> You have to have install node js to run the plugins else check the documentation
+>> Plugins to run with node js:
+>> *  **Markdown Preview**
+>> * **neoclide/coc.nvim**
 
-4 nvim :)
+### Linux
+Requisitos para instalar en Linux
+* Vim-Plug
+* Git
+* RipGrep
+* nvim
 
 
-Editor base extraido del canal de [Joaquin Varela ](https://www.youtube.com/channel/UCw1Ipy5_P1OL0zUJMfYC7-A).
+##### Special Configurations for Linux 
+> It only works on Vim >= 8.1 and Neovim
+
+> You have to have install node js to run the plugins else check the documentation
+>> Plugins to run with node js:
+>> *  **Markdown Preview**
+>> * **neoclide/coc.nvim**
+
+### Plugins
+* [Gruvbox]()
+* [Vim-Polyglot]()
+* [LightLine Gruvbox]()
+* [Tokyonight-vim]()
+* [Vim-Easymotion]()
+* [Vim-tmuxnavigator]()
+* [Nerdtree]()
+* [Vim-devicons]()
+* [Vim-Airline/Vim-Airline]()
+* [Vim-Airline/Vim-Airline-Themes]()
+* [Neoclide/coc.nvim]()
+* [Alvan/Vim-closetag]()
+* [Nvim-lua/plenary.nvim]()
+* [Nvim-telescope/telescope.nvim]()
+* [Markdown Preview](https://github.com/iamcco/markdown-preview.nvim/blob/master/README.md)
+
+        Preview Markdown in your modern browser with synchronised scrolling and flexible configuration.
+
+* [Norcalli/Nvim-Colorizer.lua]()
+* [Terryma/Vim-Multiple-Cursors]()
+* [Yggdroot/Indentline]()
+* [Mhinz/Vim-signify]()
+* [Tpope/Vim-fugitive]()
+* [Tpope/Vim-rhubarb]()
+* [junegunn/gv.vim]()
+* [psliwka/Vim-smoothie]()
+
+Configuracion base extraida del canal [Joaquin Varela ](https://www.youtube.com/channel/UCw1Ipy5_P1OL0zUJMfYC7-A).

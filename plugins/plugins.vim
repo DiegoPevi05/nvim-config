@@ -34,6 +34,8 @@ Plug 'alvan/vim-closetag'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.5' }
 
+"Markdown preview
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 "treesitter(tomorrow check this)
 "Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
